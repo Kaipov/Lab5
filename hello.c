@@ -8,7 +8,7 @@
 #include <linux/kobject.h>
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("ILYA POBORCEV");
+MODULE_AUTHOR("Ivan Kaipov");
 
 #define SUCCESS 0
 #define BUF_LEN 128
