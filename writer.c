@@ -56,11 +56,11 @@ static void create_timer()
 static ssize_t write_count_store(struct kobject *kobj, struct kobj_attribute *attr, const char *buf, size_t count)
 {
 	sscanf(buf, "%du", &write_count);
-    create_timer();
+        create_timer();
 	return count;
 }
 
-static struct kobj_attribute writer_attrb = __ATTR(writer_count, 0666, write_count_show, write_count_store);
+static struct kobj_attribute writer_attrb = __ATTR(writer_count, 0660, write_count_show, write_count_store);
 
 static struct kobject *kobj;
 
